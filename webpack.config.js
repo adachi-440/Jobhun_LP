@@ -19,9 +19,7 @@ module.exports = {
             test: /\.scss/,
             use: [
                 // CSSファイルを書き出すオプションを有効にする
-                {
-                    loader: MiniCssExtractPlugin.loader,
-                },
+                "style-loader",
                 // CSSを読み込む
                 {
                     loader: "css-loader",
@@ -41,9 +39,4 @@ module.exports = {
             ],
         }]
     },
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: "style.css",
-        }),
-    ],
 };
