@@ -5,34 +5,80 @@
     <title>Jobnun LP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <script src="bundle.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!----- header----->
     <header>
-      <img src="images/logo.png">
+      <nav class="navbar navbar-expand-md fixed-top bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" , class="header-logo" />
+        </a>
+        <button class="sp-header-DL-btn float-right"><span class="header-DL-btn-text">ダウンロード</span></button>
+        <button class="navbar-toggler header-sp-menu" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse header-nav-bar justify-content-end" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item header-nav-bar-title"><a class="nav-link" href="#">ABOUT</a></li>
+            <li class="nav-item header-nav-bar-title"><a class="nav-link" href="#">FEATURE</a></li>
+            <li class="nav-item header-nav-bar-title"><a class="nav-link" href="#">BENEFIT</a></li>
+            <li class="nav-item header-nav-bar-title"><a class="nav-link" href="#">VOICE</a></li>
+          </ul>
+        </div>
+        <button class="pc-header-DL-btn"><span class="header-DL-btn-text">ダウンロード</span></button>
+      </nav>
     </header>
-    <!----- /header ----->
 
-    <!----- main ----->
-    <article>
-      <h1>Jobhunダウンロード</h1>
-      <section>
-        <h2>見出し２</h2>
-        <button type="button" class="btn btn-primary">test</button>
-        <p>コンテンツの内容testest</p>
-      </section>
-    </article>
-    <!----- /main ----->
+    <div style="height: 100px;"></div>
 
-    <!----- footer ----->
-    <footer>フッター</footer>
-    <!----- /footer ----->
+    <section class="contents-cv">
+      <div class="contents-cv-text">
+        <h2 class="contents-cv-label">さあ、はじめよう！</h2>
+        <p class="contents-cv-subtitle">就活マネジメントアプリ</p>
+        <img src="images/logo.png", class="contents-cv-logo"/>
+        <div class="contents-cv-DL-btn-group">
+          <a href="https://apps.apple.com/us/app/jobhun-%E5%B0%B1%E6%B4%BB%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1546735909?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/ja-JP?size=250x83&amp;releaseDate=1610668800&h=7e959d5c88caa20a6734b239bab82817" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+          <a href='https://play.google.com/store/apps/details?id=jobhun.jobhun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/us-en/badges/static/images/badges/ja_badge_web_generic.png'/ width="270" height="110" style="margin-top: -70px;"></a>
+        </div>
+      </div>
+      <div class="contents-cv-images">
+        <img src="images/cv-img.svg">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-line text-center">
+        <div class="footer-copyright"><span class="footer-copyright-text">©️2021 Adachi inc.</span></div>
+      </div>
+    </footer>
   </body>
 </html>
