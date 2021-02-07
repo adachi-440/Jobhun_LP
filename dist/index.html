@@ -38,14 +38,22 @@
   <body>
     <!----- header----->
     <header>
-      <nav class="navbar navbar-expand-md fixed-top bg-white">
+      <nav class="navbar navbar-expand-md fixed-top bg-white pr-0">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" , class="header-logo" />
         </a>
-        <button class="sp-header-DL-btn float-right"><span class="header-DL-btn-text">ダウンロード</span></button>
-        <button class="navbar-toggler header-sp-menu" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container ml-0 mr-2", style="width: 45%;">
+          <div class="row">
+            <div class="col-6">
+              <div class="sp_contents"><button class="sp-header-DL-btn float-left"><span class="header-DL-btn-text">ダウンロード</span></button></div>
+            </div>
+            <div class="col-6">
+              <button class="navbar-toggler header-sp-menu px-0 float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="collapse navbar-collapse header-nav-bar justify-content-end" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item header-nav-bar-title"><a class="nav-link" href="#">ABOUT</a></li>
@@ -54,26 +62,43 @@
             <li class="nav-item header-nav-bar-title"><a class="nav-link" href="#">VOICE</a></li>
           </ul>
         </div>
-        <button class="pc-header-DL-btn"><span class="header-DL-btn-text">ダウンロード</span></button>
+        <div class="pc_contents"><button class="pc-header-DL-btn"><span class="header-DL-btn-text">ダウンロード</span></button></div>
       </nav>
     </header>
 
     <div style="height: 100px;"></div>
 
-    <section class="contents-cv">
-      <div class="contents-cv-text">
-        <h2 class="contents-cv-label">さあ、はじめよう！</h2>
-        <p class="contents-cv-subtitle">就活マネジメントアプリ</p>
-        <img src="images/logo.png", class="contents-cv-logo"/>
-        <div class="contents-cv-DL-btn-group">
+    <div class="pc_contents">
+      <section class="contents-cv">
+        <div class="contents-cv-text">
+          <h2 class="contents-cv-label">さあ、はじめよう！</h2>
+          <p class="contents-cv-subtitle">就活マネジメントアプリ</p>
+          <img src="images/logo.png", class="contents-cv-logo"/>
           <a href="https://apps.apple.com/us/app/jobhun-%E5%B0%B1%E6%B4%BB%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1546735909?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/ja-JP?size=250x83&amp;releaseDate=1610668800&h=7e959d5c88caa20a6734b239bab82817" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
           <a href='https://play.google.com/store/apps/details?id=jobhun.jobhun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/us-en/badges/static/images/badges/ja_badge_web_generic.png'/ width="270" height="110" style="margin-top: -70px;"></a>
         </div>
+        <div class="contents-cv-images">
+          <img src="images/cv-img.svg">
+        </div>
+      </section>
+    </div>
+    <div class="sp_contents">
+      <div class="contents-cv container">
+        <div class="contents-cv-text">
+          <h2 class="contents-cv-label text-center">さあ、はじめよう！</h2>
+          <p class="contents-cv-subtitle">就活マネジメントアプリ</p>
+          <div style="text-align: center;"><img src="images/logo.png", class="contents-cv-logo"/></div>
+          <div style="display: flex;">
+            <a href="https://apps.apple.com/us/app/jobhun-%E5%B0%B1%E6%B4%BB%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1546735909?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 170px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/ja-JP?size=250x83&amp;releaseDate=1610668800&h=7e959d5c88caa20a6734b239bab82817" alt="Download on the App Store" style="border-radius: 13px; width: 170px; height: 53px;"></a>
+            <a href='https://play.google.com/store/apps/details?id=jobhun.jobhun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/us-en/badges/static/images/badges/ja_badge_web_generic.png'/ width="180" height="80" style="margin-top: -15px;">
+            </a>
+          </div>
+        </div>
+        <div class="contents-cv-images">
+          <img src="images/sp_img.svg", width="330", height="440">
+        </div>
       </div>
-      <div class="contents-cv-images">
-        <img src="images/cv-img.svg">
-      </div>
-    </section>
+    </div>
 
     <footer class="footer">
       <div class="container footer-line text-center">
