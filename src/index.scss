@@ -83,6 +83,7 @@ header {
       font-style: normal;
       font-weight: bold;
       color: #FFFFFF;
+      text-decoration: none;
     }
   }
 
@@ -577,6 +578,61 @@ header {
 
   .contents-voice-listsp {
     display: inline-block;
+
+    .contents-voice-list-item {
+      display: flex;
+      flex-direction: column;
+      width: 340px;
+      height: 371px;
+      background-color: white;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+
+      .contents-voice-list-item-title {
+        display: flex;
+        margin-right: auto;
+        margin-left: 40px;
+        margin-top: 32px;
+
+        .contents-voice-list-item-title-text {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+
+          .contents-voice-list-item-title-text-name {
+            margin-top: 8px;
+            margin-bottom: auto;
+            margin-left: 32px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+          }
+
+          .contents-voice-list-item-title-text-kind {
+            margin-left: 32px;
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+      }
+
+      .contents-voice-list-item-main {
+        margin-top: 32px;
+        margin-left: 40px;
+        margin-right: 40px;
+        color: #454553;
+        font-size: 18px;
+        font-weight: 100;
+        text-align: start;
+      }
+
+      .contents-voice-list-item-stars {
+        margin-top: 32px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: start;
+      }
+    }
   }
 }
 
