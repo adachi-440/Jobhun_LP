@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta charset="utf-8" />
-    <title>Jobnun</title>
+    <title>Jobhun</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
@@ -37,7 +38,7 @@
   </head>
   <body>
     <!----- header----->
-    <header>
+    <header data-scroll-header>
       <div class="header">
         <nav class="navbar navbar-expand-md fixed-top pr-0", style="background-color: #fafafa;">
           <a class="navbar-brand" href="#">
@@ -48,7 +49,7 @@
               <div class="col-6">
                 <div class="sp_contents">
                   <button class="sp-header-DL-btn float-left">
-                    <span class="header-DL-btn-text">ダウンロード</span>
+                    <a href='#download', class="header-DL-btn-text">ダウンロード</a>
                   </button>
                 </div>
               </div>
@@ -73,22 +74,22 @@
           >
             <ul class="navbar-nav ml-auto">
               <li class="nav-item header-nav-bar-title">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item header-nav-bar-title">
-                <a class="nav-link" href="#">FEATURE</a>
+                <a class="nav-link" href="#feature">FEATURE</a>
               </li>
               <li class="nav-item header-nav-bar-title">
-                <a class="nav-link" href="#">BENEFIT</a>
+                <a class="nav-link" href="#benefit">BENEFIT</a>
               </li>
               <li class="nav-item header-nav-bar-title">
-                <a class="nav-link" href="#">VOICE</a>
+                <a class="nav-link" href="#voice">VOICE</a>
               </li>
             </ul>
           </div>
           <div class="pc_contents">
             <button class="pc-header-DL-btn">
-              <span class="header-DL-btn-text">ダウンロード</span>
+              <a href='#download', class="header-DL-btn-text">ダウンロード</a>
             </button>
           </div>
         </nav>
@@ -100,40 +101,42 @@
       <section class="contents">
         <div class="pc_contents">
           <div class="pc_contents-main">
-            <div class="contents-main-box">
-              <h1 class="contents-main-title">
-                <span class="main-title-sub">就活の新常識。</span><br />
-                <span class="main-title-marker">“就活マネジメント”</span>
-              </h1>
-              <p class="contents-main-sub">
-                <span class="main-sub-color">Jobhun</span
-                >であなたの就活状況が一目瞭然！<br />
-                これで第一志望内定を掴み取ろう！
-              </p>
-              <div class="contents-main-cvbtn">
-                <a
-                  href="https://apps.apple.com/us/app/jobhun-%E5%B0%B1%E6%B4%BB%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1546735909?itsct=apps_box&amp;itscg=30200"
-                  style="
-                    display: inline-block;
-                    overflow: hidden;
-                    border-radius: 13px;
-                    width: 250px;
-                    height: 83px;
-                  "
-                  ><img
-                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/ja-JP?size=250x83&amp;releaseDate=1610668800&h=7e959d5c88caa20a6734b239bab82817"
-                    alt="Download on the App Store"
-                    style="border-radius: 13px; width: 250px; height: 83px"
-                /></a>
-
-                <a
-                  href="https://play.google.com/store/apps/details?id=jobhun.jobhun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                  ><img alt='Google Play で手に入れよう'
-                  src='https://play.google.com/intl/us-en/badges/static/images/badges/ja_badge_web_generic.png'/
-                  width="280" height="120" style="margin-top: -18px;"></a
-                >
+            <center>
+              <div class="contents-main-box">
+                <h1 class="contents-main-title">
+                  <span class="main-title-sub">就活の新常識。</span><br />
+                  <span class="main-title-marker">“就活マネジメント”</span>
+                </h1>
+                <p class="contents-main-sub">
+                  <span class="main-sub-color">Jobhun</span
+                  >であなたの就活状況が一目瞭然！<br />
+                  これで第一志望内定を掴み取ろう！
+                </p>
+                <div class="contents-main-cvbtn">
+                  <a
+                    href="https://apps.apple.com/us/app/jobhun-%E5%B0%B1%E6%B4%BB%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1546735909?itsct=apps_box&amp;itscg=30200"
+                    style="
+                      display: inline-block;
+                      overflow: hidden;
+                      border-radius: 13px;
+                      width: 250px;
+                      height: 83px;
+                    "
+                    ><img
+                      src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/ja-JP?size=250x83&amp;releaseDate=1610668800&h=7e959d5c88caa20a6734b239bab82817"
+                      alt="Download on the App Store"
+                      style="border-radius: 13px; width: 250px; height: 83px"
+                  /></a>
+  
+                  <a
+                    href="https://play.google.com/store/apps/details?id=jobhun.jobhun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                    ><img alt='Google Play で手に入れよう'
+                    src='https://play.google.com/intl/us-en/badges/static/images/badges/ja_badge_web_generic.png'/
+                    width="280" height="120" style="margin-top: -18px;"></a
+                  >
+                </div>
               </div>
-            </div>
+            </center>
 
             <div class="contents-main-img">
               <img src="images/main-img.svg" alt="ホーム画面" />
@@ -186,7 +189,7 @@
       </section>
 
       <!-- About -->
-      <section class="contents">
+      <section class="contents" id="about" data-scroll>
         <div class="contents-about">
           <div class="contents-about-movie">
             <img src="images/about-img.svg" alt="Jobhunのマニュアルムービー">
@@ -206,7 +209,7 @@
       </section>
 
     <!--feature-->
-    <section class="contents">
+    <section class="contents" id="feature" data-scroll>
 
       <!--PC feature-->
       <div class="pc_contents">
@@ -257,10 +260,10 @@
               <i class="far fa-futbol"></i>
               <div class="feature-list-item-caption">
                 <h3 class="feature-list-item-caption-name">
-                  ガクチカも管理
+                  ESも管理
                 </h3>
                 <p class="list-item-caption-text">
-                  煩雑になりがちなESに記載する項目も、簡単に管理することができます！
+                  学生時代力を入れたことなど、頻繁にESに記載する項目も、簡単に管理することができます！
                 </p>
               </div>
             </li>
@@ -271,7 +274,7 @@
     <!--SP Feature-->
     <div class="sp_contents">
 
-      <div class="contents-featuresp">
+      <div class="contents-featuresp" style="padding-bottom: 32px;">
         <h2 class="contents-titlesp">
           <span class="contents-title-subsp">FEATURE</span>
           Jobhunの特徴
@@ -344,292 +347,295 @@
                     <i class="far fa-futbol fa-4x" style="color: #082DB4;"></i></div>
                     <div class="feature-list-item-captionsp">
                       <h3 class="feature-list-item-caption-namesp">
-                        ガクチカも管理
+                        ESも管理
                       </h3>
                       <p class="list-item-caption-text">
-                        煩雑になりがちなESに記載する項目も、簡単に管理することができます！
+                        学生時代力を入れたことなど、頻繁にESに記載する項目も、簡単に管理することができます！
                       </p>
                     </div>
                   </div>
                 </div>
               </center>
-              <div class="sp-mar"></div>
+              <div class="sp-mar""></div>
         </div>
       </div>
     </section>
 
         <!----- PC メリット詳細 ----->
-        <div class="pc_contents">
+        <section id="benefit" data-scroll>
+          <div class="pc_contents">
+            <center>
+              <div class="contents-benefit">
+                <h2 class="contents-title">
+                  <span class="contents-title-sub">BENEFIT</span>
+                  Jobhunを使った3つメリット
+                </h2>
+                <div class="contents-benefit-list">
+                  <div class="contents-benefit-list-item">
+                    <div class="contents-benefit-list-item-box">
+                      <center><i class="far fa-eye fa-5x" style="color: #5E7FF7;"></i></center>
+                    </div>
+                    <div class="contents-benefit-list-item-title">就活の視える化</div>
+                    <div class="contents-benefit-list-item-sub">志望度や選考状態により企業<br>を分けることで、就活全体を<br>把握することができます！</div>
+                  </div>
+                </div>
+  
+                <div class="contents-benefit-list">
+                  <div class="contents-benefit-list-item">
+                    <div class="contents-benefit-list-item-box">
+                      <center><i class="far fa-arrow-alt-circle-up fa-5x" style="color: #5E7FF7;"></i></center>
+                    </div>
+                    <div class="contents-benefit-list-item-title">就活への意識を高める</div>
+                    <div class="contents-benefit-list-item-sub">
+                      就活の視える化によって、自分が今何<br>をすべきかを明確に捉えることができ<br>るため、就活への意識が高まります！</div>
+                  </div>
+                </div>
+  
+                <div class="contents-benefit-list">
+                  <div class="contents-benefit-list-item">
+                    <div class="contents-benefit-list-item-box">
+                      <center><i class="far fa-file-alt fa-5x" style="color: #5E7FF7;"></i></center>
+                    </div>
+                    <div class="contents-benefit-list-item-title">ESの質が向上</div>
+                    <div class="contents-benefit-list-item-sub">電車での移動中などに各項目の<br>編集が可能なため、自分を見つ<br>め直すきっかけになります！</div>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+  
+          <!----- SP メリット詳細 ----->
+          <div class="sp_contents"">
+  
+            <div class="contents-titlesp", style="margin-top: 64px;">
+              <center>BENEFIT</center>
+            </div>
+            <div class="contents-title-subsp">
+              <center>Jobhunを使う<br>3つのメリット</center>
+            </div>
+  
           <center>
-            <div class="contents-benefit">
-              <h2 class="contents-title">
-                <span class="contents-title-sub">BENEFIT</span>
-                Jobhunを使った3つメリット
-              </h2>
+              <div class="sp-mar"></div>
               <div class="contents-benefit-list">
-                <div class="contents-benefit-list-item">
+                <div class="contents-benefit-list-itemsp">
                   <div class="contents-benefit-list-item-box">
                     <center><i class="far fa-eye fa-5x" style="color: #5E7FF7;"></i></center>
                   </div>
-                  <div class="contents-benefit-list-item-title">就活の視える化</div>
+                  <div class="contents-benefit-list-item-titlesp">就活の視える化</div>
                   <div class="contents-benefit-list-item-sub">志望度や選考状態により企業<br>を分けることで、就活全体を<br>把握することができます！</div>
                 </div>
               </div>
-
-              <div class="contents-benefit-list">
-                <div class="contents-benefit-list-item">
-                  <div class="contents-benefit-list-item-box">
-                    <center><i class="far fa-arrow-alt-circle-up fa-5x" style="color: #5E7FF7;"></i></center>
-                  </div>
-                  <div class="contents-benefit-list-item-title">就活への意識を高める</div>
-                  <div class="contents-benefit-list-item-sub">
-                    就活の視える化によって、自分が今何<br>をすべきかを明確に捉えることができ<br>るため、就活への意識が高まります！</div>
-                </div>
-              </div>
-
-              <div class="contents-benefit-list">
-                <div class="contents-benefit-list-item">
-                  <div class="contents-benefit-list-item-box">
-                    <center><i class="far fa-file-alt fa-5x" style="color: #5E7FF7;"></i></center>
-                  </div>
-                  <div class="contents-benefit-list-item-title">ESの質が向上</div>
-                  <div class="contents-benefit-list-item-sub">電車での移動中などに各項目の<br>編集が可能なため、自分を見つ<br>め直すきっかけになります！</div>
-                </div>
-              </div>
-            </div>
           </center>
-        </div>
-
-        <!----- SP メリット詳細 ----->
-        <div class="sp_contents">
-
-          <div class="contents-titlesp">
-            <center>BENEFIT</center>
-          </div>
-          <div class="contents-title-subsp">
-            <center>Jobhunを使う<br>3つのメリット</center>
-          </div>
-
-        <center>
-            <div class="sp-mar"></div>
+  
+          <center>
             <div class="contents-benefit-list">
               <div class="contents-benefit-list-itemsp">
                 <div class="contents-benefit-list-item-box">
-                  <center><i class="far fa-eye fa-5x" style="color: #5E7FF7;"></i></center>
+                  <center><i class="far fa-arrow-alt-circle-up fa-5x" style="color: #5E7FF7;"></i></center>
                 </div>
-                <div class="contents-benefit-list-item-titlesp">就活の視える化</div>
-                <div class="contents-benefit-list-item-sub">志望度や選考状態により企業<br>を分けることで、就活全体を<br>把握することができます！</div>
+                <div class="contents-benefit-list-item-titlesp">就活への意識を高める</div>
+                <div class="contents-benefit-list-item-sub">
+                  就活の視える化によって、自分<br>が今何をすべきかを明確に捉える<br>ことができるため、就活への<br>意識が高まります！</div>
+              </div>
+            </div>
+          </center>
+  
+          <div class="sp-mar"></div>
+  
+          <center>
+            <div class="contents-benefit-list">
+              <div class="contents-benefit-list-itemsp">
+                <div class="contents-benefit-list-item-box">
+                  <center><i class="far fa-file-alt fa-5x" style="color: #5E7FF7;"></i></center>
+                </div>
+                <div class="contents-benefit-list-item-titlesp">ESの質が向上</div>
+                <div class="contents-benefit-list-item-sub">電車での移動中などに各項目の<br>編集が可能なため、自分を見つ<br>め直すきっかけになります！</div>
               </div>
             </div>
         </center>
-
-        <center>
-          <div class="contents-benefit-list">
-            <div class="contents-benefit-list-itemsp">
-              <div class="contents-benefit-list-item-box">
-                <center><i class="far fa-arrow-alt-circle-up fa-5x" style="color: #5E7FF7;"></i></center>
-              </div>
-              <div class="contents-benefit-list-item-titlesp">就活への意識を高める</div>
-              <div class="contents-benefit-list-item-sub">
-                就活の視える化によって、自分<br>が今何をすべきかを明確に捉える<br>ことができるため、就活への<br>意識が高まります！</div>
-            </div>
-          </div>
-        </center>
-
-        <div class="sp-mar"></div>
-
-        <center>
-          <div class="contents-benefit-list">
-            <div class="contents-benefit-list-itemsp">
-              <div class="contents-benefit-list-item-box">
-                <center><i class="far fa-file-alt fa-5x" style="color: #5E7FF7;"></i></center>
-              </div>
-              <div class="contents-benefit-list-item-titlesp">ESの質が向上</div>
-              <div class="contents-benefit-list-item-sub">電車での移動中などに各項目の<br>編集が可能なため、自分を見つ<br>め直すきっかけになります！</div>
-            </div>
-          </div>
-      </center>
-    </div>
+      </div>
+        </section>
 
     <!--ボイス-->
     <div class="pc-voice">
     </div>
+    <div id="voice" data-scroll></div>
 
-    <div class="sp-voice">
-      <div class="contents-titlesp">
-        <center>VOICE</center>
-      </div>
-      <div class="contents-title-subsp">
-        <center>Jobhunを愛用している<br>就活生の声</center>
-      </div>
-    </div>
-
-      <!----- PC　ボイス詳細 ----->
-      <div class="pc_contents">
-      <center>
-        <div class="contents-voice">
-          <h2 class="contents-title">
-            <span class="contents-title-sub">VOICE</span>
-            Jobhunを愛用している就活生の声
-          </h2>
-          <div class="contents-voice-list">
-            <div class="contents-voice-list-item">
-              <div class="contents-voice-list-item-title">
-                <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
-                <div class="contents-voice-list-item-title-text">
-                  <p class="contents-voice-list-item-title-text-name">２１卒・男性</p>
-                  <p class="contents-voice-list-item-title-text-kind">自動車メーカー</p>
-                </div>
-              </div>
-              <div class="contents-voice-list-item-main">
-                本選考は20社以上受けたのですが、日程や志望度を完璧にマネジメントでき、Jobhunのおかげで10社以上も内々定をいただくことができました！
-              </div>
-              <div class="contents-voice-list-item-stars">
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="contents-voice-list">
-            <div class="contents-voice-list-item">
-              <div class="contents-voice-list-item-title">
-                <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
-                <div class="contents-voice-list-item-title-text">
-                  <p class="contents-voice-list-item-title-text-name">２２卒・男性</p>
-                  <p class="contents-voice-list-item-title-text-kind">外資系コンサルタント</p>
-                </div>
-              </div>
-              <div class="contents-voice-list-item-main">
-                「就活状況はいかがですか」という質問はほぼ必ず聞かれます。Jobhunで志望群を常に意識していたことで、冷静に説明することができました！
-              </div>
-              <div class="contents-voice-list-item-stars">
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="contents-voice-list">
-            <div class="contents-voice-list-item">
-              <div class="contents-voice-list-item-title">
-                <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
-                <div class="contents-voice-list-item-title-text">
-                  <p class="contents-voice-list-item-title-text-name">２２卒・女性</p>
-                  <p class="contents-voice-list-item-title-text-kind">システムエンジニア</p>
-                </div>
-              </div>
-              <div class="contents-voice-list-item-main">
-                ESをスマホアプリで管理することで、インターンシップや研究の隙間時間にESの見直し・添削ができ、質の良いESを書くことができました！
-              </div>
-              <div class="contents-voice-list-item-stars">
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #999999"></i>
-              </div>
-            </div>
-          </div>
+    <section>
+      <div class="sp-voice">
+        <div class="contents-titlesp">
+          <center>VOICE</center>
         </div>
-      </center>
-    </div>
+        <div class="contents-title-subsp">
+          <center>Jobhunを愛用している就活生の声</center>
+        </div>
+      </div>
+  
+        <!----- PC ボイス詳細 ----->
+        <div class="pc_contents">
+        <center>
+          <div class="contents-voice">
+            <h2 class="contents-title">
+              <span class="contents-title-sub">VOICE</span>
+              Jobhunを愛用している就活生の声
+            </h2>
+            <div class="contents-voice-list">
+              <div class="contents-voice-list-item">
+                <div class="contents-voice-list-item-title">
+                  <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
+                  <div class="contents-voice-list-item-title-text">
+                    <p class="contents-voice-list-item-title-text-name">２１卒・男性</p>
+                    <p class="contents-voice-list-item-title-text-kind">自動車メーカー</p>
+                  </div>
+                </div>
+                <div class="contents-voice-list-item-main">
+                  本選考は20社以上受けたのですが、日程や志望度を完璧にマネジメントでき、Jobhunのおかげで10社以上も内々定をいただくことができました！
+                </div>
+                <div class="contents-voice-list-item-stars">
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="contents-voice-list">
+              <div class="contents-voice-list-item">
+                <div class="contents-voice-list-item-title">
+                  <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
+                  <div class="contents-voice-list-item-title-text">
+                    <p class="contents-voice-list-item-title-text-name">２２卒・男性</p>
+                    <p class="contents-voice-list-item-title-text-kind">外資系コンサルタント</p>
+                  </div>
+                </div>
+                <div class="contents-voice-list-item-main">
+                  「就活状況はいかがですか」という質問はほぼ必ず聞かれます。Jobhunで志望群を常に意識していたことで、冷静に説明することができました！
+                </div>
+                <div class="contents-voice-list-item-stars">
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                </div>
+              </div>
+            </div>
 
+            <div class="contents-voice-list">
+              <div class="contents-voice-list-item">
+                <div class="contents-voice-list-item-title">
+                  <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
+                  <div class="contents-voice-list-item-title-text">
+                    <p class="contents-voice-list-item-title-text-name">２２卒・女性</p>
+                    <p class="contents-voice-list-item-title-text-kind">システムエンジニア</p>
+                  </div>
+                </div>
+                <div class="contents-voice-list-item-main">
+                  ESをスマホアプリで管理することで、インターンシップや研究の隙間時間にESの見直し・添削ができ、質の良いESを書くことができました！
+                </div>
+                <div class="contents-voice-list-item-stars">
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #999999"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
 
-
-      <!----- SP　ボイス詳細 ----->
-      <div class="sp_contents">
-        <div class="contents-voice">
+        <!----- SP ボイス詳細 ----->
+        <div class="sp_contents">
+          <div class="contents-voice">
+            <center>
+            <div class="contents-voice-listsp">
+              <div class="contents-voice-list-item">
+                <div class="contents-voice-list-item-title">
+                  <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
+                  <div class="contents-voice-list-item-title-text">
+                    <p class="contents-voice-list-item-title-text-name">２１卒・男性</p>
+                    <p class="contents-voice-list-item-title-text-kind">自動車メーカー</p>
+                  </div>
+                </div>
+                <div class="contents-voice-list-item-main">
+                  本選考は20社以上受けたのですが、日程や志望度を完璧にマネジメントでき、Jobhunのおかげで10社以上も内々定をいただくことができました！
+                </div>
+                <div class="contents-voice-list-item-stars">
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                </div>
+              </div>
+            </div>
+          </center>
+          <div class="sp-mar"></div>
+  
           <center>
-          <div class="contents-voice-listsp">
-            <div class="contents-voice-list-item">
-              <div class="contents-voice-list-item-title">
-                <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
-                <div class="contents-voice-list-item-title-text">
-                  <p class="contents-voice-list-item-title-text-name">２１卒・男性</p>
-                  <p class="contents-voice-list-item-title-text-kind">自動車メーカー</p>
+            <div class="contents-voice-listsp">
+              <div class="contents-voice-list-item">
+                <div class="contents-voice-list-item-title">
+                  <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
+                  <div class="contents-voice-list-item-title-text">
+                    <p class="contents-voice-list-item-title-text-name">２２卒・男性</p>
+                    <p class="contents-voice-list-item-title-text-kind">外資系コンサルタント</p>
+                  </div>
+                </div>
+                <div class="contents-voice-list-item-main">
+                  「就活状況はいかがですか」という質問はほぼ必ず聞かれます。Jobhunで志望群を常に意識していたことで、冷静に説明することができました！
+                </div>
+                <div class="contents-voice-list-item-stars">
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
                 </div>
               </div>
-              <div class="contents-voice-list-item-main">
-                本選考は20社以上受けたのですが、日程や志望度を完璧にマネジメントでき、Jobhunのおかげで10社以上も内々定をいただくことができました！
-              </div>
-              <div class="contents-voice-list-item-stars">
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-              </div>
             </div>
-          </div>
-        </center>
-        <div class="sp-mar"></div>
-
-        <center>
-          <div class="contents-voice-listsp">
-            <div class="contents-voice-list-item">
-              <div class="contents-voice-list-item-title">
-                <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
-                <div class="contents-voice-list-item-title-text">
-                  <p class="contents-voice-list-item-title-text-name">２２卒・男性</p>
-                  <p class="contents-voice-list-item-title-text-kind">外資系コンサルタント</p>
+          </center>
+          <div class="sp-mar"></div>
+          <center>
+            <div class="contents-voice-listsp">
+              <div class="contents-voice-list-item">
+                <div class="contents-voice-list-item-title">
+                  <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
+                  <div class="contents-voice-list-item-title-text">
+                    <p class="contents-voice-list-item-title-text-name">２２卒・女性</p>
+                    <p class="contents-voice-list-item-title-text-kind">システムエンジニア</p>
+                  </div>
+                </div>
+                <div class="contents-voice-list-item-main">
+                  ESをスマホアプリで管理することで、インターンシップや研究の隙間時間にESの見直し・添削ができ、質の良いESを書くことができました！
+                </div>
+                <div class="contents-voice-list-item-stars">
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
+                  <i class="fas fa-star fa-1x" style="color: #999999"></i>
                 </div>
               </div>
-              <div class="contents-voice-list-item-main">
-                「就活状況はいかがですか」という質問はほぼ必ず聞かれます。Jobhunで志望群を常に意識していたことで、冷静に説明することができました！
-              </div>
-              <div class="contents-voice-list-item-stars">
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-              </div>
             </div>
+          </center>
           </div>
-        </center>
-        <div class="sp-mar"></div>
-        <center>
-          <div class="contents-voice-listsp">
-            <div class="contents-voice-list-item">
-              <div class="contents-voice-list-item-title">
-                <i class="far fa-user-circle fa-4x" style="color: #5E7FF7;"></i>
-                <div class="contents-voice-list-item-title-text">
-                  <p class="contents-voice-list-item-title-text-name">２２卒・女性</p>
-                  <p class="contents-voice-list-item-title-text-kind">システムエンジニア</p>
-                </div>
-              </div>
-              <div class="contents-voice-list-item-main">
-                ESをスマホアプリで管理することで、インターンシップや研究の隙間時間にESの見直し・添削ができ、質の良いESを書くことができました！
-              </div>
-              <div class="contents-voice-list-item-stars">
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #c1ab05"></i>
-                <i class="fas fa-star fa-1x" style="color: #999999"></i>
-              </div>
-            </div>
-          </div>
-        </center>
-        </div>
-    </div>
-
+      </div>
     </section>
-  </article>
+
+  <section>
     <div class="pc_contents">
       <section class="contents-cv">
         <div class="contents-cv-text">
-          <h2 class="contents-cv-label">さあ、はじめよう！</h2>
+          <h2 class="contents-cv-label" id="download" data-scroll>さあ、はじめよう！</h2>
           <p class="contents-cv-subtitle">就活マネジメントアプリ</p>
           <img src="images/logo.png" , class="contents-cv-logo" />
-          <a
+          <div style="display: flex;">
+            <a
             href="https://apps.apple.com/us/app/jobhun-%E5%B0%B1%E6%B4%BB%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1546735909?itsct=apps_box&amp;itscg=30200"
             style="
               display: inline-block;
@@ -647,8 +653,9 @@
             href="https://play.google.com/store/apps/details?id=jobhun.jobhun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
             ><img alt='Google Play で手に入れよう'
             src='https://play.google.com/intl/us-en/badges/static/images/badges/ja_badge_web_generic.png'/
-            width="270" height="110" style="margin-top: -70px;"></a
+            width="270" height="110" style="margin-top: -10px;"></a
           >
+          </div>
         </div>
         <div class="contents-cv-images">
           <img src="images/cv-img.svg" />
@@ -658,7 +665,7 @@
     <div class="sp_contents">
       <div class="contents-cv container">
         <div class="contents-cv-text">
-          <h2 class="contents-cv-label text-center">さあ、はじめよう！</h2>
+          <h2 class="contents-cv-label text-center" id="download" data-scroll>さあ、はじめよう！</h2>
           <p class="contents-cv-subtitle">就活マネジメントアプリ</p>
           <div style="text-align: center">
             <img src="images/logo.png" , class="contents-cv-logo" />
@@ -691,6 +698,7 @@
         </div>
       </div>
     </div>
+  </section>
 
     <footer class="footer">
       <div class="container footer-line text-center">
