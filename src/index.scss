@@ -41,49 +41,74 @@ aside {
   grid-row: 2 / 4;
 }
 
-.contents-main{
-  background-color: #fafafa;
-  display: flex;
-  color: #333333;
-  padding-right: 100px;
-  padding-left: 100px;
+/* main */
+.pc_contents{
+  display: block;
 
-  .contents-main-box{
-    margin-right: 150px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+  .pc_contents-main{
+    background-color: #fafafa;
+    display: flex;
+    color: #333333;
+    padding-right: 100px;
+    padding-left: 100px;
 
-    .contents-main-title{
-      font-size: 72px;
-      font-weight: bold;
-      line-height: 1.5;
+    .contents-main-box{
+      margin-right: 150px;
+      margin-top: 130px;
+      margin-bottom: 130px;
 
-      .main-title-sub{
-        font-size: 56px;
-        font-weight: medium;
-      }
-
-      .main-title-marker {
-        background: linear-gradient(transparent 60%, #5e7ff7 80%);
-        }
-    }
-
-    .contents-main-sub{
-      font-size: 30px;
-      margin-top: 40px;
-      margin-bottom: 94px;
-      letter-spacing: 1px;
-
-      .main-sub-color{
-        color: #082DB4;
+      .contents-main-title{
+        font-size: 72px;
         font-weight: bold;
-        font-size: 50px;
+        line-height: 1.5;
         font-family: Roboto;
+
+        .main-title-sub{
+          font-size: 56px;
+          font-weight: medium;
+        }
+
+        .main-title-marker {
+          background: linear-gradient(transparent 60%, #5e7ff7 80%);
+          }
+      }
+
+      .contents-main-sub{
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 94px;
+        letter-spacing: 1px;
+
+        .main-sub-color{
+          color: #082DB4;
+          font-weight: bold;
+          font-size: 50px;
+          font-family: Roboto;
+        }
       }
     }
-  }
+  }  
 }
 
+.sp_contents{
+  display: none;
+}
+
+@media only screen and (max-width : 736px){
+  .pc_contents { 
+    display:none;
+   }
+  .sp_contents { 
+    display:block;
+  }
+
+}
+
+
+/* mainのレスポンシブ対応 */
+
+
+/* about */
 .contents-about{
   color: #333333;
   display: flex;
@@ -100,6 +125,8 @@ aside {
       font-size: 52px;
       letter-spacing: 2px;
       line-height: 1.5;
+      font-family: Roboto;
+      font-weight: bold;
 
       .contents-title-sub{
         font-family: Roboto;
@@ -123,7 +150,8 @@ aside {
       margin-bottom: 60px;
       font-size: 30px;
       letter-spacing: 2px;
-      line-height: 1.5;
+      line-height: 1.8;
+      font-family: Roboto;
 
       .contents-about-text-bold{
         font-weight: bold;
@@ -133,6 +161,9 @@ aside {
   }
 }
 
+/* aboutのレスポンシブ対応 */
+
+/* feature */
 .contents-feature{
   color: #333333;
   -webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
@@ -145,6 +176,8 @@ aside {
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
 
     .contents-title-sub{
       font-family: Roboto;
@@ -189,4 +222,6 @@ aside {
     }
   }
 }
+
+/* featureのレスポンシブ対応 */
 
