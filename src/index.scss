@@ -455,17 +455,6 @@ header {
         color: #333333;
         text-align: center;
       }
-
-      .contents-benefit-list-item-box {
-        background-color: #F1F2FE;
-        width: 140px;
-        height: 140px;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px auto;
-      }
     }
   }
 }
@@ -485,6 +474,17 @@ header {
   height: 370px;
 }
 
+.contents-benefit-list-item-box {
+  background-color: #F1F2FE;
+  width: 140px;
+  height: 140px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
 /* voice */
 .pc-voice {
   display: block;
@@ -496,6 +496,7 @@ header {
 
 .contents-voice {
   margin: 100px auto;
+
   .contents-title {
     font-size: 52px;
     letter-spacing: 2px;
@@ -698,6 +699,7 @@ footer {
 
 /* スマホサイズの処理 */
 @media (max-width: 768px) {
+
   /* 基本処理 */
   .pc-benefit {
     display: none;
